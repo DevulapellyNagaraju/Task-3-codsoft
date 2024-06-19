@@ -1,13 +1,13 @@
 from password_generator import generate_password  # Import generate_password function
 
 def main():
-  # Welcome Text with color... (Replace with a more user-friendly method if desired)
+  # Welcome Text 
   print("""
 *~*~*~*~*~*~*~*~*~*~*~*~*      
-*       """ + "\033[33m" + """                *
+*                       *
  Welcome to the Password 
        Generator!!                 
-*       """ + "\033[0m" + """                *
+*                       *
 *~*~*~*~*~*~*~*~*~*~*~*~*
 """)
 
@@ -21,7 +21,7 @@ def main():
     except ValueError:
       print("Please enter a valid number for the password length.")
 
-    continue_choice = input("\033[31m" + "Do you want to continue (y/n)? " + "\033[0m").lower()
+    continue_choice = input("Do you want to continue (y/n)?").lower()
     if continue_choice != 'y':
       print("Exiting the program. Goodbye!!!!")
       break
